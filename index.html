@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Cartas de Islas Canarias</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Juego de Cartas de Islas Canarias</h1>
+    <div class="container-game">
+      <div class="info">
+        <div class="info-close"></div>
+        <p class="informacion" id="info"></p>
+      </div>
+      <div class="modal-close"></div>
+      <div class="solucion">
+        <!-- Aquí puedes mostrar la solución si lo deseas -->
+      </div>
+    </div>
+    <div class="intentos-container">
+      Intentos: <span class="intentos">0</span>
+    </div>
+    <div class="victoria-mensaje">
+        <p>¡Felicidades! Has resuelto todas las parejas.</p>
+    </div>
+
+<!-- Tu HTML existente -->
+<div class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img class="modal-img" src="" alt="Imagen de la isla">
+    <h2 class="isla-nombre">Nombre de la isla</h2>
+    <p class="informacion">Información sobre la isla...</p>
+    <button class="modal-close-btn" style="display: none;">Cerrar</button>
+  </div>
+</div>
+
+
+
+    <div id="cartas">
+      <!-- Aquí se generará el tablero de juego dinámicamente desde JavaScript -->
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
