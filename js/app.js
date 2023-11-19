@@ -7,7 +7,7 @@ const info = document.querySelector(".info");
 const intentosElement = document.querySelector(".intentos"); // Selecciona el elemento de los intentos
 
 // Variables globales
-const numeroCartas = 2;
+const numeroCartas = 20;
 let intentos = 0;
 let parejasResueltas = 0;
 let primeraCarta = null;
