@@ -14,8 +14,6 @@ body {
 
 
 
-
-
 /* Estilos para el juego de memoria */
 .container-game {
   background-size: cover;
@@ -131,7 +129,7 @@ body {
 .record {
   position: fixed;
   background-image: url(../file/Fondo/—Pngtree—wooden\ hanging\ with\ tropical_3551374.png);
-  margin-left: 70%;
+  margin-left: 75%;
   font-weight: bold;
   padding: 0%;
   border-radius: 5px;
@@ -287,6 +285,11 @@ body {
   /* Fondo blanco */
 }
 
+.carta-acertada {
+  border: 3px solid #4caf50; /* Color verde */
+  /* Otras propiedades de estilo que desees */
+}
+
 /* Estilos para la imagen */
 #modalImage {
   max-width: 50%;
@@ -317,7 +320,7 @@ body {
   
     position: fixed;
     background-image: url(../file/Fondo/—Pngtree—wooden\ hanging\ with\ tropical_3551374.png);
-    margin-left: 18%;
+    margin-left: 8%;
     font-weight: bold;
     padding: 0%;
     border-radius: 5px;
@@ -334,20 +337,43 @@ body {
 
 }
 
+.record{
+  color: #333;
+  position: fixed;
+}
+
+#recordInfo {
+
+  margin-top: 11%;
+  
+}
+
+#intentos{
+
+  margin-top: 7%;
+  
+}
+
+#tiempo{
+
+  margin-top: 7%;
+}
+
+
  #mejor-tiempo{
   color: #333;
-  margin-top: 12%;
+  margin-top: 8%;
 }
 .intentos-container{
   color: #333;
-  margin-top: 12%;
+  margin-top: 6%;
 }
 .tiempo-container {
   color: #333;
-  margin-top: 1%;
+  margin-top: 7px;
 }
 
 #btnReiniciar{
-  margin-top: 7%;
+  margin-top: 11%;
 }
 
