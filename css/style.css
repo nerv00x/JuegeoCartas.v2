@@ -1,11 +1,11 @@
 /* Estilos generales */
 body {
-  background-image:url(../file/Fondo/—Pngtree—scene\ with\ palm\ treepalm_3556289.png);
+  background-image: url(../file/Fondo/—Pngtree—scene\ with\ palm\ treepalm_3556289.png);
   background-repeat: no-repeat;
   background-size: 2800px 1400px;
- /* Para ajustar la imagen al tamaño del contenedor */
+  /* Para ajustar la imagen al tamaño del contenedor */
   font-family: Arial, sans-serif;
-  background-color:	#9bd0e6 ;
+  background-color: #9bd0e6;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ body {
   max-width: 800px;
   margin: 20px auto;
   padding: auto;
-    backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 
@@ -37,14 +37,16 @@ body {
   perspective: 1000px;
 }
 
+
 .carta img {
-  position:absolute;
+  position: absolute;
 
   width: 80%;
   height: 80%;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
+
 .frontal {
   transform-style: preserve-3d;
 }
@@ -112,45 +114,240 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
+  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 600px;
   text-align: center;
-  position: relative;
 }
-
-.modal-img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.modal-close {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  cursor: pointer;
-}
-
 
 
 .record {
+  position: fixed;
   background-image: url(../file/Fondo/—Pngtree—wooden\ hanging\ with\ tropical_3551374.png);
-  margin-left: 75%;
+  margin-left: 70%;
   font-weight: bold;
   padding: 0%;
   border-radius: 5px;
   background-size: cover;
   background-position: center;
-  width: 400px; /* Ajusta el ancho según sea necesario */
-  min-height: 300px; /* Ajusta la altura mínima según sea necesario */
-  color: white; /* Color del texto */
-  text-align: center; /* Alineación del texto */
+  width: 400px;
+  font-style: inherit;
+  /* Ajusta el ancho según sea necesario */
+  min-height: 300px;
+  /* Ajusta la altura mínima según sea necesario */
+  color: white;
+  /* Color del texto */
+  text-align: center;
+  /* Alineación del texto */
 }
+
+ #mejor-intentos {
+  font-family: Arial, sans-serif;
+  color: black;
+  margin-top: 80px;
+}
+
+ #mejor-tiempo{
+  font-family: Arial, sans-serif;
+  color: black;
+  margin-top: 0px
+
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.7s;
+  /* Aumenta el tamaño al 110% del original */
+}
+
+.card.flipped {
+  /* transform: rotateY(180deg); */
+  transition: transform 1s;
+  transform-style: preserve-3d;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+  backface-visibility: hidden;
+  /* Oculta la parte trasera durante la animación */
+  transition: transform 1s ease;
+  /* Define la transición para el volteo */
+  margin: 5px;
+
+}
+
+
+
+.card-description {
+  top: 50%;
+  right: 5%;
+  /* Ajusta el margen derecho según lo desees */
+  width: 25%;
+  /* Ajusta el ancho según lo desees */
+  background-color: #0ABAB5;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  z-index: 1001;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 15px;
+  /* Asegura que esté encima del overlay */
+  color: #ebde35;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  /* Z-index menor al del div con la información */
+  display: none;
+}
+
+
+/* Estilos para el botón X */
+.card-description button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: lightcoral;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.card-description img {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+#cardDescription img {
+  width: 120px;
+  height: auto;
+}
+
+.display-none {
+  display: none;
+}
+
+#modal {
+  display: none;
+  /* Por defecto oculto */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo del modal con un poco de transparencia */
+}
+
+/* Estilos para la ventana modal */
+.modal-content {
+  background-color: transparent;
+  /* Fondo transparente para la imagen */
+  margin: auto;
+  display: block;
+  width: 50%;
+  /* Ajusta el tamaño de la imagen como desees */
+  max-width: 700px;
+  /* Ancho máximo de la imagen */
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(103, 103, 103);
+  /* Fondo blanco */
+}
+
+/* Estilos para la imagen */
+#modalImage {
+  max-width: 50%;
+  /* Para asegurar que la imagen no exceda el ancho del contenedor */
+  height: auto;
+  /* Para mantener la proporción original de la imagen */
+  display: block;
+  margin: 0 auto;
+  /* Centrar la imagen */
+}
+
+/* Estilos para el botón de cierre */
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: lightcoral;
+  /* Cambia el color de fondo al pasar el mouse */
+}
+
+.right-section {
+  
+    position: fixed;
+    background-image: url(../file/Fondo/—Pngtree—wooden\ hanging\ with\ tropical_3551374.png);
+    margin-left: 18%;
+    font-weight: bold;
+    padding: 0%;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    /* Ajusta el ancho según sea necesario */
+    min-height: 300px;
+    /* Ajusta la altura mínima según sea necesario */
+    color: white;
+    /* Color del texto */
+    text-align: center;
+    /* Alineación del texto */
+
+}
+
+ #mejor-tiempo{
+  color: #333;
+  margin-top: 12%;
+}
+.intentos-container{
+  color: #333;
+  margin-top: 12%;
+}
+.tiempo-container {
+  color: #333;
+  margin-top: 1%;
+}
+
+#btnReiniciar{
+  margin-top: 7%;
+}
+

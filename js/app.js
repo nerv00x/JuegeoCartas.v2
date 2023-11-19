@@ -36,57 +36,6 @@ const dorsos = [
   "./file/Dorso/DorsoComida2.jpg",
 ];
 
-const informacionIslas = [
-  {
-    url: "./file/imagenes/RoqueNubloGC.png",
-    isla: "Gran Canaria: ",
-    descripcion: "Uno de los puntos destacados de la isla son las Dunas de Maspalomas, un paisaje de dunas de arena que se extiende hasta el mar y se asemeja a un desierto. En el centro de la isla se encuentra el Parque Nacional de Garajonay, declarado Patrimonio de la Humanidad por la UNESCO. Es un bosque de laurisilva subtropical con una gran biodiversidad. La ciudad de Las Palmas, la capital de la isla, cuenta con un casco antiguo encantador con arquitectura colonial bien conservada, como la Casa de Colón.",
-  },
-  {
-    url: "./file/imagenes/TimanfayaLNZ.png",
-    isla: "Lanzarote: ",
-    descripcion: "El Parque Nacional de Timanfaya es el parque nacional más destacado de la isla de Lanzarote, que forma parte de las Islas Canarias en España. Este parque nacional es famoso por su paisaje volcánico y lunar. Timanfaya se creó como resultado de una serie de erupciones volcánicas que ocurrieron entre 1730 y 1736, y aún se considera una zona geotérmica activa. En el Parque Nacional de Timanfaya, los visitantes pueden admirar una variedad de formaciones volcánicas, campos de lava, cráteres y cenizas.",
-  }, {
-    url: "./file/imagenes/Charcotacoron-Elhierro.jpg",
-    isla: "El Hierro: ",
-    descripcion: "El Hierro ha sido declarada Reserva de la Biosfera por la UNESCO debido a su compromiso con la sostenibilidad y la conservación del medio ambiente. La isla ha implementado políticas ecológicas y de energía renovable, incluyendo un innovador sistema de generación de energía a partir de fuentes renovables. El Sabinar es uno de los bosques de sabinas más antiguos de Europa. Estos árboles retorcidos por los vientos alisios son un elemento distintivo del paisaje de la isla.",
-  },
-  {
-    url: "./file/imagenes/TeideTNF.png",
-    isla: "Tenerife: ",
-    descripcion: "Tiene el Pico del Teide que es el pico más alto de España y uno de los volcanes más grandes del mundo. El Parque Nacional del Teide es un destino imprescindible para los amantes de la naturaleza y ofrece una gran variedad de senderos y vistas panorámicas espectaculares. Gran parte de la isla ha sido declarada Reserva de la Biosfera por la UNESCO debido a su diversidad natural y sus esfuerzos de conservación. Las aguas alrededor de Tenerife son un lugar importante para la observación de ballenas y delfines.",
-  },
-  {
-    url: "./file/imagenes/LaPalma.jpg",
-    isla: "La Palma: ",
-    descripcion: "La Palma se conoce comúnmente como 'La Isla Bonita' debido a su asombrosa belleza natural, que incluye impresionantes paisajes, acantilados y exuberante vegetación. La Palma es uno de los mejores lugares del mundo para la observación de estrellas, gracias a su cielo limpio y su baja contaminación lumínica. El Observatorio del Roque de los Muchachos es uno de los principales observatorios astronómicos del hemisferio norte.",
-  },
-  {
-    url: "./file/imagenes/LaMacetaelHierro.jpg",
-    isla: "El Hierro: ",
-    descripcion: "El Hierro ha sido declarada Reserva de la Biosfera por la UNESCO debido a su compromiso con la sostenibilidad y la conservación del medio ambiente. La isla ha implementado políticas ecológicas y de energía renovable, incluyendo un innovador sistema de generación de energía a partir de fuentes renovables. El Sabinar es uno de los bosques de sabinas más antiguos de Europa. Estos árboles retorcidos por la acción de los vientos alisios son un elemento distintivo del paisaje de la isla.",
-  },
-  {
-    url: "./file/imagenes/LaurisilvaLaGomera.png",
-    isla: "La Gomera: ",
-    descripcion: "La laurisilva es un bosque subtropical húmedo que se caracteriza por su exuberante vegetación, que incluye árboles perennes de hojas verdes brillantes, helechos, musgos y líquenes. Estos bosques suelen estar envueltos en niebla y reciben una cantidad significativa de lluvia, lo que contribuye a su biodiversidad. Ha sido declarado Patrimonio de la Humanidad por la UNESCO.",
-  },
-  {
-    url: "./file/imagenes/LaPalma2.jpg",
-    isla: "La Palma: ",
-    descripcion: "La isla de La Palma, también conocida como 'La Isla Bonita', es famosa por su belleza natural y sus impresionantes paisajes volcánicos. Conocida por su observatorio astronómico, el Roque de los Muchachos ofrece una vista panorámica espectacular del cielo nocturno. El Parque Nacional de la Caldera de Taburiente presenta un cráter gigantesco y es un lugar popular para los entusiastas del senderismo.",
-  },
-  {
-    url: "./file/imagenes/LaGraciosaG.png",
-    isla: "La Graciosa: ",
-    descripcion: "La Graciosa, ubicada en el archipiélago canario, es una isla de gran belleza natural y serenidad que forma parte del archipiélago Chinijo. Reconocida por sus playas de arenas blancas y aguas cristalinas, como la Playa de las Conchas o la Playa de la Francesa, ofrece un entorno paradisíaco para los amantes de la naturaleza y los deportes acuáticos. Con un ambiente tranquilo y pintoresco, el pueblo de Caleta del Sebo es el corazón de la isla, donde se puede disfrutar de su gastronomía local y la hospitalidad de sus habitantes."
-  },
-  {
-    url: "./file/imagenes/PlayaCofeteFTV.png",
-    isla: "Fuerteventura: ",
-    descripcion: "Fuerteventura es famosa por sus impresionantes playas de arena dorada que se extienden a lo largo de la costa. Algunas de las más populares incluyen Playa de Corralejo, Playa de Sotavento y Playa de Cofete. Fuerteventura tiene un paisaje volcánico único, con vastas extensiones de lava petrificada que se asemejan a un desierto lunar. Gran parte de Fuerteventura ha sido declarada Reserva de la Biosfera por la UNESCO debido a su singularidad ecológica. Encontrarás una amplia variedad de ecosistemas desérticos.",
-  }
-];
 
 // Función para evitar parejas con la misma imagen
 function obtenerParejasImagenes(imagenes, numeroCartas) {
@@ -97,7 +46,7 @@ function obtenerParejasImagenes(imagenes, numeroCartas) {
 // Lógica para el juego
 // Lógica para el juego
 function iniciarJuego() {
-  
+
   const cartas = obtenerParejasImagenes(imgs, numeroCartas);
   cartas.sort(() => Math.random() - 0.5);
 
@@ -122,8 +71,8 @@ function iniciarJuego() {
     tablero.appendChild(carta);
 
     carta.addEventListener("click", (e) => voltearCarta(e.currentTarget)); // Utilizamos currentTarget en lugar de target
-    
-    
+
+
   });
 }
 
@@ -150,49 +99,87 @@ function ocultarCarta(carta) {
   carta.classList.remove("mostrar");
 }
 
-function mostrarModal(imagen) {
-  const modal = document.querySelector('.modal');
-  const modalImg = document.querySelector('.modal-img');
-  const modalNombre = document.querySelector('.isla-nombre');
-  const modalInformacion = document.querySelector('.informacion');
-  const modalClose = document.querySelector('.modal-close-btn');
 
-  console.log('Imagen recibida:', imagen); // Agregamos este console.log para verificar la URL recibida
+function openModal(imageUrl, islandName, islandInfo) {
+  const modal = document.getElementById('modal');
+  const modalImage = document.getElementById('modalImage');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalInfo = document.getElementById('modalInfo');
 
-  // Obtener la información de la isla basada en la imagen
-  console.log('Imagen recibida:', imagen); // Verificamos la URL recibida
+  const decodedUrl = decodeURIComponent(imageUrl.replace('url("', '').replace('")', ''));
+  modalImage.src = decodedUrl;
 
+  // Agrega una clase a la imagen del modal
+  modalImage.classList.add('modal-image');
 
-  // Obtener la información de la isla basada en la imagen
-  const islaInfo = informacionIslas.find(isla => isla.url === imagen);
+  modalTitle.innerText = islandName;
+  modalInfo.innerText = islandInfo;
 
-  console.log('Información de isla encontrada:', islaInfo); // Verificamos la información encontrada
+  modal.style.display = 'block';
+}
 
-  // Comparamos las rutas de las imágenes en los arreglos imgs e informacionIslas
-  console.log('Imágenes de imgs:', imgs);
-  console.log('Imágenes de informacionIslas:', informacionIslas.map(isla => isla.url));
+// Función para cerrar la ventana modal
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}
 
-  if (islaInfo) {
-    console.log('Asignando información al modal...');
-    modalImg.src = islaInfo.url;
-    modalNombre.textContent = islaInfo.isla;
-    modalInformacion.textContent = islaInfo.descripcion;
+function getIslandInfo(imageUrl) {
 
-    modal.style.display = 'block';
+  const islandInfoMap = {
+    'Charcotacoron-Elhierro.jpg': {
+      name: 'El Hierro',
+      info: 'El Hierro: Conocida por su compromiso con la sostenibilidad y la conservación del medio ambiente. Tiene un paisaje volcánico único y ha implementado políticas ecológicas y de energía renovable.'
+    },
+    'LaGraciosaG.png': {
+      name: 'La Graciosa',
+      info: 'La Graciosa: Es la isla más pequeña y se destaca por su ambiente tranquilo. No se permite el acceso de automóviles particulares, lo que contribuye a una atmósfera de paz. Es un lugar ideal para actividades de buceo y snorkel.'
+    },
+    'LaMacetaelHierro.jpg': {
+      name: 'La Maceta - El Hierro',
+      info: 'La Maceta es una formación costera única en la isla de El Hierro. Con su peculiar formación rocosa, es un lugar popular para los turistas y los amantes de la naturaleza. Sus piscinas naturales, esculpidas por la lava volcánica, ofrecen un entorno impresionante para nadar y relajarse. Este sitio es conocido por su belleza natural, que combina acantilados, aguas cristalinas y formaciones rocosas únicas, convirtiéndolo en un lugar destacado para visitar en la isla de El Hierro.'
+    },
+    'LaPalma.jpg': {
+      name: 'La Palma',
+      info: 'Conocida como "La Isla Bonita", ofrece impresionantes paisajes, acantilados y una exuberante vegetación. Es famosa por ser uno de los mejores lugares del mundo para la observación de estrellas.'
+    },
+    'LaurisilvaLaGomera.png': {
+      name: 'La Gomera',
+      info: 'Destacada por sus bosques subtropicales húmedos. La laurisilva, su exuberante vegetación, ha sido declarada Patrimonio de la Humanidad por la UNESCO..'
+    },
+    'PlayaCofeteFTV.png': {
+      name: 'Fuerteventura',
+      info: 'Famosa por sus playas de arena dorada y su paisaje volcánico. Gran parte de la isla ha sido declarada Reserva de la Biosfera debido a su singularidad ecológica.'
+    },
+    'RoqueNubloGC.png': {
+      name: 'Gran Canaria',
+      info: 'Destaca por sus Dunas de Maspalomas y el Parque Nacional de Garajonay. Posee una gran variedad de microclimas debido a su topografía diversa.'
+    },
+    'TeideTNF.png': {
+      name: 'Tenerife',
+      info: 'Alberga el Pico del Teide, el pico más alto de España y uno de los volcanes más grandes del mundo. Gran parte de la isla es Reserva de la Biosfera y sus aguas son ideales para la observación de ballenas y delfines.'
+    },
+    'TimanfayaLNZ.png': {
+      name: 'Lanzarote',
+      info: 'Conocida por su paisaje volcánico y lunar. El Parque Nacional de Timanfaya es uno de sus puntos destacados, creado por una serie de erupciones volcánicas.'
+    },
+    
+  };
+console.log(islandInfoMap)
 
-    modalClose.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
+  const imageName = imageUrl.split('/').pop();
+  const islandInfo = islandInfoMap[imageName];
+
+  if (islandInfo) {
+    return {
+      name: islandInfo.name || 'Nombre Desconocido',
+      info: islandInfo.info || 'Información no disponible.'
+    };
   } else {
-    console.log('Información de isla no disponible');
-    modalNombre.textContent = "Nombre de la Isla";
-    modalInformacion.textContent = "Información sobre la Isla no disponible";
-
-    modal.style.display = 'block';
-
-    modalClose.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
+    return {
+      name: 'Nombre Desconocido',
+      info: 'Información no disponible.'
+    };
   }
 }
 
@@ -201,6 +188,7 @@ function compararCartas() {
 
   // Actualiza el contador de intentos en el elemento HTML
   intentosElement.textContent = intentos;
+  guardarIntentos(intentos);
 
   const idPrimeraCarta = parseInt(primeraCarta.dataset.id);
   const idSegundaCarta = parseInt(segundaCarta.dataset.id);
@@ -217,8 +205,8 @@ function compararCartas() {
     parejasResueltas++;
     primeraCarta.classList.add("resuelta"); // Marcar la primera carta como resuelta
     segundaCarta.classList.add("resuelta"); // Marcar la segunda carta como resuelta
-
-    mostrarModal(imgPrimeraCarta); // Mostrar el modal con la imagen acertada
+    const islandInfo = getIslandInfo(imgPrimeraCarta)
+    openModal(imgPrimeraCarta, islandInfo.name, islandInfo.info); // Mostrar el modal con la imagen acertada
 
     if (parejasResueltas === numeroCartas / 2) {
       mostrarMensajeVictoria();
@@ -229,6 +217,38 @@ function compararCartas() {
     ocultarCartasDesiguales();
   }
 }
+
+function reiniciarPartida() {
+  // Reiniciar todas las variables y elementos necesarios para iniciar el juego nuevamente
+  intentos = 0;
+  parejasResueltas = 0;
+  primeraCarta = null;
+  segundaCarta = null;
+  bloquearInput = false;
+  tiempoTranscurrido = 0;
+  clearInterval(tiempoInterval); // Detener el intervalo de tiempo
+  document.getElementById('tiempo').textContent = tiempoTranscurrido; // Reiniciar el contador de tiempo en pantalla
+  intentosElement.textContent = intentos; // Reiniciar el contador de intentos en pantalla
+
+  // Quitar el mensaje de victoria si está siendo mostrado
+  const mensajeVictoria = document.querySelector(".victoria-mensaje");
+  mensajeVictoria.style.display = "none";
+
+  // Limpiar el tablero
+  const tablero = document.querySelector(".container-game");
+  tablero.innerHTML = '';
+
+  // Volver a iniciar el juego
+  iniciarJuego();
+  tiempoInterval = setInterval(actualizarTiempo, 1000);
+}
+
+// Obtener el botón de reiniciar
+const btnReiniciar = document.getElementById('btnReiniciar');
+
+// Agregar un event listener para reiniciar la partida al hacer clic en el botón
+btnReiniciar.addEventListener('click', reiniciarPartida);
+
 
 function ocultarCartasDesiguales() {
   bloquearInput = true;
@@ -246,7 +266,7 @@ function reiniciarCartas() {
 }
 
 function mostrarMensajeVictoria() {
-  
+
   const mensajeVictoria = document.querySelector(".victoria-mensaje");
   mensajeVictoria.style.display = "block"; // Muestra el mensaje de victoria
   reiniciarContadorTiempo()
@@ -259,12 +279,11 @@ function mostrarRecord() {
 
   if (recordExistente) {
     const intentosRecord = recordExistente.intentos;
-    const aciertosRecord = recordExistente.aciertos;
     const tiempoRecord = recordExistente.tiempoTotal;
 
     // Mostrar el récord en el HTML, por ejemplo:
     const recordHTML = document.querySelector('.record');
-    recordHTML.innerHTML = `Mejor Record:<br>Intentos: ${intentosRecord}, Aciertos: ${aciertosRecord}, Tiempo: ${tiempoRecord} segundos`;
+    recordHTML.innerHTML = `Mejor Record: <br>Intentos: ${intentosRecord}, Tiempo: ${tiempoRecord} segundos`;
   }
 }
 
@@ -284,7 +303,7 @@ tiempoInterval = setInterval(actualizarTiempo, 1000);
 
 // Cuando termina el juego o en el momento adecuado, detén el intervalo
 function detenerTiempo() {
-  const tiempoTranscurrido = Math.floor((Date.now() - tiempoInicio) / 1000); // Calcula el tiempo transcurrido en segundos
+  // const tiempoTranscurrido = Math.floor((Date.now() - tiempoInicio) / 1000); // Calcula el tiempo transcurrido en segundos
   clearInterval(tiempoModal); // Detiene el tiempo del modal si está en espera
   console.log(`Tiempo transcurrido: ${tiempoTranscurrido} segundos`);
   guardarTiempoRecord(tiempoTranscurrido);
@@ -294,27 +313,23 @@ function reiniciarContadorTiempo() {
   tiempo = 0; // Reinicia el tiempo a cero
   actualizarTiempo(); // Actualiza el tiempo en pantalla
 }
-function guardarTiempoRecord(tiempo) {
+
+
+function guardarTiempoRecord(tiempo, intentos) {
   const recordExistente = JSON.parse(localStorage.getItem('record'));
 
-  if (!recordExistente) {
+  if (!recordExistente || tiempo < recordExistente.tiempoTotal) {
     const record = {
-      intentos,
-      aciertos,
-      tiempoTotal: tiempo // Guarda el tiempo transcurrido como tiempoTotal
+      intentos: intentos,
+      tiempoTotal: tiempo
     };
     localStorage.setItem('record', JSON.stringify(record));
-  } else {
-    if (tiempo < recordExistente.tiempoTotal) {
-      const record = {
-        intentos,
-        aciertos,
-        tiempoTotal: tiempo // Guarda el tiempo transcurrido como tiempoTotal
-      };
-      localStorage.setItem('record', JSON.stringify(record));
-    }
   }
 }
+function guardarIntentos(intentos) {
+  localStorage.setItem('intentosGuardados', intentos);
+}
+
 
 // Ejecutar la función para mostrar el récord al cargar la página
 window.onload = function () {
